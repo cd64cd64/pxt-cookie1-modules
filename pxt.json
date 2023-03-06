@@ -1,0 +1,19 @@
+{
+    "name": "pxt-wangbit-modules",
+    "version": "0.0.1",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/pxt-wangbit-modules-strings.json",
+        "_locales/zh/pxt-wangbit-modules-jsdoc-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "preferredEditor": "tsprj"
+}

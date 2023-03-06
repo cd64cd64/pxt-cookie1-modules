@@ -1,0 +1,10 @@
+{
+  "ModuleIndex": "Provides access to basic micro:bit functionality.",
+  "wangbitModules.controlMotorOutput": "TODO: 控制马达PWM输出。",
+  "wangbitModules.controlServoOutput": "TODO: 控制舵机旋转。",
+  "wangbitModules.displaySegNumber": "TODO: 显示数码管数值。",
+  "wangbitModules.readDistance": "TODO: 获取超声波传感器与前方障碍物的距离函数。",
+  "wangbitModules.readPHData": "TODO: 读取PH。",
+  "wangbitModules.readTBData": "TODO: 读取浊度。",
+  "wangbitModules.readPressData": "TODO: 读取压力。"
+}
