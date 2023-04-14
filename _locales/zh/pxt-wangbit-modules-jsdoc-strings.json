@@ -1,10 +1,13 @@
 {
   "ModuleIndex": "Provides access to basic micro:bit functionality.",
-  "wangbitModules.controlMotorOutput": "TODO: 控制马达PWM输出。",
-  "wangbitModules.controlServoOutput": "TODO: 控制舵机旋转。",
-  "wangbitModules.displaySegNumber": "TODO: 显示数码管数值。",
-  "wangbitModules.readDistance": "TODO: 获取超声波传感器与前方障碍物的距离函数。",
-  "wangbitModules.readPHData": "TODO: 读取PH。",
-  "wangbitModules.readTBData": "TODO: 读取浊度。",
-  "wangbitModules.readPressData": "TODO: 读取压力。"
+  "CookieModules.displaySegNumber": "TODO: 显示数码管数值。",
+  "CookieModules.readPmData": "TODO: 读取电位器值。",
+  "CookieModules.readTurbidityData": "TODO: 读取浊度值。",
+  "CookieModules.readPhData": "TODO: 读取PH值。",
+  "CookieModules.readDistance": "TODO: 读取超声波距离值。",
+  "CookieModules.readTempHumidity": "TODO: 读取温湿度值。", 
+  "CookieModules.readAdcData": "TODO: 读取四路ADC值。",
+  "CookieModules.readDigitalData": "TODO: 读取四路数字值。",
+  "CookieModules.setDigitalOutput": "TODO: 输出四路数字值。"
+  
 }
