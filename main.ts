@@ -81,7 +81,7 @@ enum THMesure{
  * Custom blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace wangbitModules1 {
+namespace CookieModules {
     const PM_ADDRESS = 0x26//电位器26-29//3031不好用
     const SEG_ADDRESS = 0x32//数码管32-35//用电位器测
     const DigitalIn_ADDRESS = 0x36//单个//
