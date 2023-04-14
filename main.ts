@@ -77,10 +77,7 @@ enum THMesure{
         return true;
     }
 
-/**
- * Custom blocks
- */
-//% weight=100 color=#0fbc11 icon=""
+//% color=190 weight=100 icon="\uf1ec" block="Cookie Modules"
 namespace cookieModules {
     const PM_ADDRESS = 0x26//电位器26-29//3031不好用
     const SEG_ADDRESS = 0x32//数码管32-35//用电位器测
