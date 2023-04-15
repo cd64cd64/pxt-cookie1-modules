@@ -192,7 +192,7 @@ namespace cookieModules {
     * TODO: 读取浊度值。
     */
     //% blockId=read_turbidity block="read %module turbidity data"
-    //% block
+    //% weight=65
     export function readTurbidityData(module: ModuleIndex): number {
         pins.i2cWriteRegister(TURBIDITY_ADDRESS + module, 0x00, 0x01);
         let dataL;
@@ -207,7 +207,7 @@ namespace cookieModules {
     *TODO: 读取PH值。
     */
     //% blockId=read_ph block="read %module ph data"
-    //% block
+    //% weight=65
     export function readPhData(module: ModuleIndex): number {
         pins.i2cWriteRegister(PH_ADDRESS + module, 0x00, 0x01);
         let dataL;
@@ -223,7 +223,7 @@ namespace cookieModules {
 * TODO: 读取电位器值。
 */
     //% blockId=read_Distance block="read %module SonarDistance data"
-    //% block
+    //% weight=65
     export function readDistance(module: ModuleIndex): number {
         pins.i2cWriteRegister(SONAR_ADDRESS + module, 0x00, 0x01);
         let dataL;
@@ -239,7 +239,7 @@ namespace cookieModules {
      * @param value describe value here, eg: 5
      */
     //% blockId=read_hm block="read %module %TH value"
-    //% block
+    //% weight=65
     export function readTempHumidity(module: ModuleIndex,TH:THMesure): number {
         pins.i2cWriteRegister(HM_ADDRESS + module, 0x00, 0x01);
         let dataL;
@@ -267,7 +267,7 @@ namespace cookieModules {
     * @param value describe value here, eg: 5
     */
     //% blockId=read_ad block="read %index adc value"
-    //% block
+    //% weight=65
     export function readAdcData(index: ADCIndex): number {
         pins.i2cWriteRegister(ADC_ADDRESS, 0x00, 0x01);
         let dataL;
@@ -298,12 +298,12 @@ namespace cookieModules {
     }
 
 
-/**
+    /**
     * TODO: 读取四路数字值。
     * @param value describe value here, eg: 5
     */
-//% blockId=read_digital block="read %index digital value"
-//% block
+    //% blockId=read_digital block="read %index digital value"
+    //% weight=65
     export function readDigitalData(Pin: DigitalInPinIndex): number {
         pins.i2cWriteRegister(DigitalIn_ADDRESS, 0x00, 0x01);
         let data;
@@ -329,7 +329,7 @@ namespace cookieModules {
     * @param value describe value here, eg: 5
     */
     //% blockId=Digital_Output block="set %pin digital %state"
-    //% block
+    //% weight=65
     export function setDigitalOutput(Pin: DigitalOutputPinIndex, state: DigitalOutputIndex)
     {
         if (Pin == 0) {
