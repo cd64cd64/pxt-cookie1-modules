@@ -218,8 +218,8 @@ namespace cookieModules {
         return (data)
     }
     /**
-* TODO: 读取电位器值。
-*/
+    * TODO: 读取超声波值。
+    */
     //% blockId=read_Distance block="read %module SonarDistance data"
     //% weight=65
     export function readDistance(module: ModuleIndex): number {
@@ -230,6 +230,7 @@ namespace cookieModules {
         dataL = pins.i2cReadRegister(SONAR_ADDRESS + module, 0x01, NumberFormat.UInt8LE);
         dataH = pins.i2cReadRegister(SONAR_ADDRESS + module, 0x02, NumberFormat.UInt8LE);
         data = dataL + dataH * 256;
+        data = data / 10;
         return (data)
     }
     /**
