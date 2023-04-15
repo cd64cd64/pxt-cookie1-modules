@@ -156,7 +156,6 @@ namespace cookieModules {
         let str_num = num.toString();//数字转为字符串
         let len = str_num.length;//取长度
         let j = 0;
-        let k;
         if (validate(str_num)) {//判断是否需要处理
             for (let i = len - 1; i >= 0; i--) {//从后往前判断
                 if (str_num.charAt(i) == '.') {//如果有小数点。
@@ -171,7 +170,6 @@ namespace cookieModules {
             }
             pins.i2cWriteBuffer(SEG_ADDRESS, buf);
         }
-        return (k);
     }
     /**
     * TODO: 读取电位器值。
