@@ -1,8 +1,7 @@
 
 /**
-* 使用此文件来定义自定义函数和图形块。
-* 想了解更详细的信息，请前往 https://arcade.makecode.com/blocks/custom
-*/
+ * Provides access to basic micro:bit functionality.
+ */
 enum ModuleIndex {
     //% block="module1"
     Module1,
@@ -147,7 +146,7 @@ namespace cookieModules {
      * TODO: 显示数码管数值。
      */
     //% blockId=display_seg_number block="control seg %module display number %num"
-    //% block
+    //% weight=65
     export function displaySegNumber(module: ModuleIndex, num: number) {
         let buf = pins.createBuffer(4);
         buf[0] = 0;
@@ -178,7 +177,7 @@ namespace cookieModules {
     * TODO: 读取电位器值。
     */
     //% blockId=read_pm block="read %module pm data"
-    //% block
+    //% weight=65
     export function readPmData(module: ModuleIndex): number {
         pins.i2cWriteRegister(PM_ADDRESS + module, 0x00, 0x01);
         let dataL;
