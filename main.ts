@@ -13,37 +13,37 @@ enum ModuleIndex {
     Module4
 }
 enum ADCIndex {
-    //% block="CH1"
+    //% block="A1"
     CH1,
-    //% block="CH2"
+    //% block="A2"
     CH2,
-    //% block="CH3"
+    //% block="A3"
     CH3,
-    //% block="CH4"
+    //% block="A4"
     CH4
 }
 enum DigitalInPinIndex {
-    //% block="P10"
+    //% block="1"
     P10,
-    //% block="P11"
+    //% block="2"
     P11,
-    //% block="P16"
+    //% block="3"
     P16,
-    //% block="P17"
+    //% block="4"
     P17
 }
 enum DigitalOutputPinIndex {
-    //% block="P10"
+    //% block="1"
     P10,
-    //% block="P11"
+    //% block="2"
     P11,
-    //% block="P16"
+    //% block="3"
     P16,
-    //% block="P17"
+    //% block="4"
     P17,
-    //% block="P35"
+    //% block="5"
     P35,
-    //% block="P36"
+    //% block="6"
     P36
 }
 enum DigitalOutputIndex {
